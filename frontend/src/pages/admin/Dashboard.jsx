@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import api from '@/lib/axios'
+import api from '@/lib/api'
 import { useAuth } from '@/context/AuthContext'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -204,8 +204,8 @@ export default function AdminDashboard() {
       >
         {/* Recent Notices */}
         <Card>
-          <CardHeader className="flex flex-row items-center justify-between">
-            <div>
+          <CardHeader className="flex  flex-row items-center justify-between">
+            <div className=''>
               <CardTitle>Recent Notices</CardTitle>
               <CardDescription>Latest notices posted</CardDescription>
             </div>
