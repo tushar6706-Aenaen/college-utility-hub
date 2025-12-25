@@ -228,7 +228,7 @@ export default function ManageEvents() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Manage Events</h1>
+          <h1 className="text-2xl font-semibold text-gray-200">Manage Events</h1>
           <p className="text-muted-foreground mt-1">
             Create, edit, and manage college events
           </p>
@@ -338,7 +338,7 @@ export default function ManageEvents() {
                     </TableCell>
                     <TableCell>
                       {isUpcoming(event.date) ? (
-                        <Badge className="bg-green-100 text-green-700">Upcoming</Badge>
+                        <Badge className="bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">Upcoming</Badge>
                       ) : (
                         <Badge variant="secondary">Past</Badge>
                       )}

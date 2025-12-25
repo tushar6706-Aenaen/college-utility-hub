@@ -246,7 +246,7 @@ export default function StudentLostFound() {
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Lost & Found</h1>
+          <h1 className="text-2xl font-semibold text-gray-200">Lost & Found</h1>
           <p className="text-muted-foreground mt-1">
             Report lost items or help others find theirs
           </p>
@@ -315,7 +315,7 @@ export default function StudentLostFound() {
                     ))}
                   </SelectContent>
                 </Select>
-                <Button type="submit">Search</Button>
+                <Button type="submit" variant="outline">Search</Button>
               </form>
             </CardContent>
           </Card>
@@ -341,7 +341,7 @@ export default function StudentLostFound() {
                 <Card key={post._id} className="hover:shadow-md transition-shadow">
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
-                      <Badge className={post.type === 'lost' ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}>
+                      <Badge className="bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
                         {post.type === 'lost' ? 'Lost' : 'Found'}
                       </Badge>
                       <Badge variant="secondary" className={getCategoryColor(post.category)}>
@@ -396,7 +396,7 @@ export default function StudentLostFound() {
                 <Card key={post._id}>
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
-                      <Badge className={post.type === 'lost' ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}>
+                      <Badge className="bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
                         {post.type === 'lost' ? 'Lost' : 'Found'}
                       </Badge>
                       <Badge className={getStatusColor(post.status)}>
