@@ -87,11 +87,7 @@ npm install
 npm run dev
 ```
 
-## Default Credentials
 
-| Role | Email | Password |
-|------|-------|----------|
-| Admin | admin@college.com | admin123 |
 
 Students can register through the application.
 
